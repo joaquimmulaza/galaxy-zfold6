@@ -1,0 +1,98 @@
+
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="ltr">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<meta charset="utf-8" />
+	<!-- minimal-ui attribute is for iOS7.2 if we notice with eyebrow bars remove -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="robots" content="noindex" />
+
+
+	<title>Page Not Found - Samsung</title>
+
+	<!-- Global Styles -->
+	<link rel="stylesheet" type="text/css" href="/common/next/css/samsung.css">
+	<link rel="stylesheet" type="text/css" href="/uk/next/css/samsung.css">
+	<!-- Navigation -->		
+	<link rel="stylesheet" href="/common/next/css/navigation.css">
+	<link rel="stylesheet" href="/uk/next/css/navigation.css">
+	
+	<link rel="stylesheet" type="text/css" href="/common/next/css/modules/alerts.css" />
+	<link rel="stylesheet" type="text/css" href="/uk/next/css/modules/alerts.css" />
+	<!--[if lte IE 9]>
+		<script src="/common/next/js/lib/Placeholders.min.js"></script>
+	<![endif]-->
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="/common/next/css/ie-samsung.css">			
+		<link rel="stylesheet" href="/uk/next/css/ie-samsung.css">	
+		<link rel="stylesheet" href="/common/next/css/ie-navigation.css">
+		<link rel="stylesheet" href="/uk/next/css/ie-navigation.css">		
+		<script src="/common/next/js/lib/html5shiv.js"></script>
+	<![endif]-->
+	<!--[if IE 7]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<link rel="stylesheet" href="/common/next/css/ie7-samsung.css">
+		<script type="text/javascript" src="/common/next/js/lib/lte-ie7.js"></script>
+	<![endif]-->
+	
+	<!-- favicon  -->
+	<link rel="shortcut icon" href="/common/next/img/favicon.ico">
+	<link rel="apple-touch-icon" href="/common/next/img/app_ico.gif" />
+	<!-- Template 개별 js, css -->
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="/common/next/css/pages/ie-error.css">
+	<![endif]-->
+	<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" type="text/css" href="/common/next/css/pages/error.css">
+	<!--<![endif]-->
+	<script type="text/javascript" src="/common/next/js/lib/jquery-1.8.3.min.js"></script>
+
+	<script type="text/javascript">
+	
+		var pageErrorAlign = function() {
+	
+		var cont = $('.error-conts');
+	
+			var l = parseInt(($(window).width() - $(cont).width() ) / 2);
+			var t = parseInt(($(window).height() - $(cont).height() ) / 2);
+					
+			$(cont).css({
+				"top" : t + "px",
+				"left" : l + "px"
+			});
+			$(cont).css('width','$(cont).width()');
+			//$('.error-container').css('height', ch);
+		};
+		
+		$(document).ready(function() {
+			pageErrorAlign();
+		});
+		
+		$(window).resize(function() {
+			pageErrorAlign();
+		});
+
+	</script>
+	<!-- //Template 개별 js, css -->
+
+</head>
+
+<body class="ss_samsung error">
+	<div class="error-container">
+		<h1 class="error-logo"><img src="/common/img/samsung-logo.png" alt="Samsung" /></h1>
+		<div class="error-conts error-icon1">
+			<h2>The page you requested<br /> is not available</h2>
+			<div class="error-box">
+				<p>Sorry, we are having a problem executing your request.<br>
+				     The page you requested could not be found.</p>
+				<a href="javascript:history.back()">Back to previous page <span class="icon-link-play icon"></span></a>
+				<a href="/">Go to Samsung.com Home <span class="icon-link-play icon"></span></a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+
